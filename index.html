@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Generator</title>
+  <link rel="stylesheet" type="text/css" href="components/style.css">
+</head>
+<body>
+  <!-- HTML content -->
+  <form id="form">
+    <!-- form fields -->
+    <!-- index.html -->
+
+<!-- Form -->
+<form id="form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+  
+    <label for="objective">Objective:</label>
+    <textarea id="objective" name="objective" required></textarea>
+  
+    <label for="education">Education:</label>
+    <input type="text" id="education" name="education" required>
+  
+    <label for="work-experience">Work Experience:</label>
+    <textarea id="work-experience" name="work-experience" required></textarea>
+  
+    <label for="skills">Skills:</label>
+    <input type="text" id="skills" name="skills" required>
+  
+    <button type="submit">Generate Resume</button>
+  </form>
+  
+  <!-- Resume Template -->
+  <div id="resume-template">
+    <h1 id="name"></h1>
+    <p id="email"></p>
+    <p id="phone"></p>
+    <p id="objective"></p>
+    <p id="education"></p>
+    <p id="work-experience"></p>
+    <p id="skills"></p>
+  </div>
+  </form>
+  <button id="download-button">Download Resume</button>
+  <div id="preview">
+    <h2>Preview</h2>
+    <div id="resume-preview">
+      <div class="loader" id="loader"></div>
+      <div id="resume-content"></div>
+      <div id="preview">
+        </div>
+        <button id="share-button">Share Resume</button>
+      </div>
+      
+    </div>
+    <button id="print-button">Print Resume</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
